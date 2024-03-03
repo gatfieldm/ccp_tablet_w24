@@ -1,0 +1,216 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 10px;
+  }
+body {
+    background-color: lightcyan;
+    font-family: 'Arial';
+    font-size: 16px;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: solid grey;
+    border-radius: 10px;
+}
+nav {
+    background-color: grey;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+   
+    
+}
+.nav-ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: inline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+  }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+nav li {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 10px;
+}
+a.skip{
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+a.skip:focus {
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    background-color: darkblue;
+    color: white;
+    overflow: visible;
+    text-align: center;
+    font-weight: bold  ;
+  }
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav li.active {
+    background-color: navy;
+    display: inline-block;
+    border-radius: 5px;
+    border: solid lightcyan;
+    font-weight: bold;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.resize-img {
+    width: 90%;
+}
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.grid-travel-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+.grid-travel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    p{
+        font-style: italic  ;
+    }
+
+}
+.grid-travel-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.grid-gallery-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    p {
+        font-style: italic;
+    
+    }
+    figcaption {
+        text-align: center;
+        font-style: italic;
+    }
+}
+.Niagara-div p{
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+.Niagara {
+    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+}
+.center-image {
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+p {
+    line-height: 1.5;
+}
+main ul{
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 10px;
+  }
+main ol{
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: darkgrey;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+  
+/* Media Queries
+Did you include media queries to ensure that any gifs or other animation are not displayed when the user prefers reduced-motion? */
+@media (prefers-reduced-motion: reduce) {
+    .gif {
+      display: none;
+    }
+    * {
+        animation-duration: 0.01ms;
+        transition-duration: 0.01ms;
+      }
+  }
+
