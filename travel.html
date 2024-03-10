@@ -11,6 +11,32 @@
 
     <!--- NEED AT LEAST 3 Locations-->
 	<a href = "#main" class="skip">Skip to Main Content</a>
+	<a href="javascript:void(0);" onclick="addToFavorites('https://gatfieldm.github.io/ccp_tablet_w24/', 'Gatfield Gallery');">Add to Favorites</a>
+
+<script>
+    function addToFavorites(url, title) {
+        // internet explorer
+        if (window.external && ('AddFavorite' in window.external)) {
+            window.external.AddFavorite(url, title);
+        } 
+        // Firefox
+        else if (window.sidebar && window.sidebar.addPanel) {
+            window.sidebar.addPanel(title, url, '');
+        }
+        // Opera browser
+        else if (window.opera && window.print) { 
+            var elem = document.createElement('a');
+            elem.setAttribute('href', url);
+            elem.setAttribute('title', title);
+            elem.setAttribute('rel', 'sidebar');
+            elem.click();
+        } 
+        // other browsers do not support adding favories
+        else { 
+            alert("Your browser doesn't seem to support adding favorites. Instead, please use your browser's bookmark function.");
+        }
+    }
+</script>
     <header>
 		<nav>
 			<ul class = "nav-ul">
