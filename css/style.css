@@ -291,9 +291,9 @@ Did you include media queries to ensure that any gifs or other animation are not
                 max-width: 75%;
             }
         }
-        .center-image{
+        /* .center-image{
             width: 50%;
-        }
+        } */
         
         .grid-gallery-3 img {
             display: flex;
@@ -357,10 +357,10 @@ Did you include media queries to ensure that any gifs or other animation are not
         display: block;
     } */
 
-    /* Remove width: 50% for .center-image */
+    /* Remove width: 50% for .center-image
     .center-image {
         width: 60%;
-    }
+    } */
 
     /* Remove width: 100% for .grid-gallery-3 img */
     .grid-gallery-3 img {

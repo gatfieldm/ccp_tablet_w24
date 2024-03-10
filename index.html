@@ -10,6 +10,26 @@
 <body>
     <a href = "#main" class="skip">Skip to Main Content</a>
     <a href="javascript:window.external.AddFavorite('https://gatfieldm.github.io/ccp_tablet_w24/', 'Gatfield Gallery')">Add to Favorites</a>
+    <a href="javascript:void(0);" onclick="addToFavorites('https://gatfieldm.github.io/ccp_tablet_w24/', 'Gatfield Gallery');">Add to Favorites</a>
+
+<script>
+    function addToFavorites(url, title) {
+        if (window.sidebar && window.sidebar.addPanel) { // Firefox
+            window.sidebar.addPanel(title, url, '');
+        } else if (window.external && ('AddFavorite' in window.external)) { // IE
+            window.external.AddFavorite(url, title);
+        } else if (window.opera && window.print) { // Opera
+            var elem = document.createElement('a');
+            elem.setAttribute('href', url);
+            elem.setAttribute('title', title);
+            elem.setAttribute('rel', 'sidebar');
+            elem.click();
+        } else { // Other browsers
+            alert("Your browser doesn't support adding favorites. Please use your browser's bookmark function.");
+        }
+    }
+</script>
+    
     <header>
         <nav>
             <ul class = "nav-ul">
