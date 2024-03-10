@@ -8,9 +8,10 @@ body {
     font-size: 16px;
 }
 header {
+    position: relative;
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: auto;
     text-align: center;
     justify-content: center;
 
@@ -213,4 +214,210 @@ Did you include media queries to ensure that any gifs or other animation are not
         transition-duration: 0.01ms;
       }
   }
+
+
+  /* add media query for tablet view using min width */
+    @media (min-width: 750px) {
+        /* provide a unique and challenging addition */
+        /*use flex to align the header and nav */
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            padding: 30px;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-self: center;
+            top: 0;
+            width: 90%;
+            left: 50%;
+            
+        }
+        /* nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        /* .nav-ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        /* nav a {
+            padding: 8px 15px;
+        }
+        nav li {
+            margin: 0 10px;
+        } */
+         nav{
+            position: fixed;
+            display: grid;
+            grid-template-columns: 4fr;
+            justify-content: center;
+            align-self: center;
+            right:10%;
+            top: 0;
+            z-index: 1030;
+            border: 3px solid black;
+            width: 600px; /* to prevent the navbar getting covered up by other content */
+         }
+         /* .nav-ul {
+            position: fixed;
+            top: 0;
+            z-index: 1030; /* to prevent the navbar getting covered up by other content */
+      
+
+
+        /* use flex for grid elements */
+
+        .grid-gallery {
+            /* display: flex; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        .grid-travel-4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .grid-travel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .grid-travel-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /* the images in .grid-gallery-3 need to be shrunk*/
+        
+        .grid-gallery-3 {
+            /* display: flex; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .center-image{
+            width: 50%;
+        }
+        
+        .grid-gallery-3 img {
+            width: 100%;
+
+
+        }
+        .index-gallery {
+            display: grid;
+            justify-content: space-between;
+            column-gap: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+
+        }
+
+        .grid-travel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .grid-travel img {
+           width:auto;
+           justify-content: center;
+        }
+        .grid-travel-4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .Niagara-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .grid-travel-title {
+            display: grid;
+
+        }
+        .img {
+            border: 5px solid black;
+        }
+
+    /* Structural changes for tablet view */
+
+    /* Remove fixed positioning for nav and .nav-ul */
+
+
+    /* Remove flex-wrap and justify-content for .grid-gallery */
+    .grid-gallery {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    /* Remove display: flex for .grid-travel-4 */
+    .grid-travel-4 {
+        display: block;
+    }
+
+    /* Remove display: flex for .grid-travel */
+    .grid-travel {
+        display: block;
+    }
+
+    /* Remove display: flex for .grid-travel-title */
+    .grid-travel-title {
+        display: block;
+    }
+
+    /* Remove display: flex for .grid-gallery-3 */
+    .grid-gallery-3 {
+        display: block;
+    }
+
+    /* Remove width: 50% for .center-image */
+    .center-image {
+        width: auto;
+    }
+
+    /* Remove width: 100% for .grid-gallery-3 img */
+    .grid-gallery-3 img {
+        width: auto;
+    }
+
+    /* Remove display: grid and column-gap for .index-gallery */
+    .index-gallery {
+        display: block;
+        column-gap: 0;
+    }
+
+    /* Remove justify-content and width:auto for .grid-travel img */
+    .grid-travel img {
+        justify-content: normal;
+        width: auto;
+    }
+
+    /* Remove display: flex for .grid-travel-4 */
+    .grid-travel-4 {
+        display: block;
+    }
+
+    /* Remove display: flex for .Niagara-div */
+    .Niagara-div {
+        display: block;
+    }
+
+    /* Remove display: grid for .grid-travel-title */
+    .grid-travel-title {
+        display: block;
+    }
+}
+        
+    
 
