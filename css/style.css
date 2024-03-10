@@ -237,22 +237,7 @@ Did you include media queries to ensure that any gifs or other animation are not
             left: 50%;
             
         }
-        /* nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } */
-        /* .nav-ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } */
-        /* nav a {
-            padding: 8px 15px;
-        }
-        nav li {
-            margin: 0 10px;
-        } */
+
          nav{
             position: fixed;
             display: grid;
@@ -285,28 +270,33 @@ Did you include media queries to ensure that any gifs or other animation are not
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        .grid-travel {
+        /* .grid-travel {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
+        } */
         .grid-travel-title {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         /* the images in .grid-gallery-3 need to be shrunk*/
         
         .grid-gallery-3 {
-            /* display: flex; */
-            flex-wrap: wrap;
+            display: grid;
+            /* flex-wrap: wrap; */
+            grid-template-columns: 1fr 1fr 1fr;
             justify-content: space-between;
+            img {
+                max-width: 75%;
+            }
         }
         .center-image{
             width: 50%;
         }
         
         .grid-gallery-3 img {
+            display: flex;
             width: 100%;
 
 
@@ -322,15 +312,6 @@ Did you include media queries to ensure that any gifs or other animation are not
 
         }
 
-        .grid-travel {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .grid-travel img {
-           width:auto;
-           justify-content: center;
-        }
         .grid-travel-4 {
             display: flex;
             flex-wrap: wrap;
@@ -338,14 +319,13 @@ Did you include media queries to ensure that any gifs or other animation are not
         }
         .Niagara-div {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
 
         }
-        .grid-travel-title {
-            display: grid;
-
-        }
+    
         .img {
             border: 5px solid black;
         }
@@ -367,23 +347,19 @@ Did you include media queries to ensure that any gifs or other animation are not
     }
 
     /* Remove display: flex for .grid-travel */
-    .grid-travel {
-        display: block;
+    .grid-travel img {
+        width: 10%;
     }
 
-    /* Remove display: flex for .grid-travel-title */
-    .grid-travel-title {
-        display: block;
-    }
 
     /* Remove display: flex for .grid-gallery-3 */
-    .grid-gallery-3 {
+    /* .grid-gallery-3 {
         display: block;
-    }
+    } */
 
     /* Remove width: 50% for .center-image */
     .center-image {
-        width: auto;
+        width: 60%;
     }
 
     /* Remove width: 100% for .grid-gallery-3 img */
@@ -409,14 +385,10 @@ Did you include media queries to ensure that any gifs or other animation are not
     }
 
     /* Remove display: flex for .Niagara-div */
-    .Niagara-div {
+    /* .Niagara-div {
         display: block;
-    }
+    } */
 
-    /* Remove display: grid for .grid-travel-title */
-    .grid-travel-title {
-        display: block;
-    }
 }
         
     
