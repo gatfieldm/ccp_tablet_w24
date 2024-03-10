@@ -138,25 +138,7 @@ img {
 
 
 }
-/* .grid-travel-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
 
-} */
-/* .grid-travel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    p{
-        font-style: italic  ;
-    }
-
-} */
-/* .grid-travel-title{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-} */
 .grid-gallery-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -251,10 +233,7 @@ Did you include media queries to ensure that any gifs or other animation are not
   }
 
 
-  /* add media query for tablet view using min width */
     @media (min-width: 800px) {
-        /* provide a unique and challenging addition */
-        /*use flex to align the header and nav */
 
         html {
             scroll-behavior: smooth;
@@ -283,16 +262,9 @@ Did you include media queries to ensure that any gifs or other animation are not
             top: 0;
             z-index: 1030;
             border: 3px solid black;
-            width: 600px; /* to prevent the navbar getting covered up by other content */
+            width: 600px;
          }
-         /* .nav-ul {
-            position: fixed;
-            top: 0;
-            z-index: 1030; /* to prevent the navbar getting covered up by other content */
-      
 
-
-        /* use flex for grid elements */
 
         .grid-gallery {
             display: flex;
@@ -318,7 +290,7 @@ Did you include media queries to ensure that any gifs or other animation are not
                 font-style: italic;
                 font-weight: 500;
                 font-size: larger;
-                color: gold;
+                color: darkgreen;
                 
             }
             img {
@@ -331,11 +303,10 @@ Did you include media queries to ensure that any gifs or other animation are not
             grid-template-columns: 1fr 1fr;
             gap: 12px;
         }
-        /* the images in .grid-gallery-3 need to be shrunk*/
+
         
         .grid-gallery-3 {
             display: grid;
-            /* flex-wrap: wrap; */
             grid-template-columns: 1fr 1fr 1fr;
             justify-content: space-between;
             img {
